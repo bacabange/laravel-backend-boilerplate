@@ -11,10 +11,12 @@
         "brozot/laravel-fcm": "^1.2",
         "davejamesmiller/laravel-breadcrumbs": "5.x",
         "fideloper/proxy": "^4.0",
+        "laracasts/utilities": "^3.0",
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
         "maatwebsite/excel": "^3.0",
         "mpociot/laravel-apidoc-generator": "^2.0",
+        "nicolaslopezj/searchable": "^1.9",
         "owen-it/laravel-auditing": "^7.0"
     },
     "require-dev": {

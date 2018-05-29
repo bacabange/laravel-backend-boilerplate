@@ -17,7 +17,8 @@
         "maatwebsite/excel": "^3.0",
         "mpociot/laravel-apidoc-generator": "^2.0",
         "nicolaslopezj/searchable": "^1.9",
-        "owen-it/laravel-auditing": "^7.0"
+        "owen-it/laravel-auditing": "^7.0",
+        "spatie/laravel-permission": "^2.12"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",

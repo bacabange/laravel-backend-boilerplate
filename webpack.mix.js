@@ -11,18 +11,5 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-	.sass('resources/assets/sass/app.scss', 'public/css')
-	// .scripts(['resources/assets/js/front.js'], 'public/js/main.js')
-	.styles(
-		[
-			'resources/assets/css/fontastic.css',
-			'resources/assets/css/style.default.css',
-			'resources/assets/css/style.blue.css',
-			'resources/assets/css/custom.css',
-		],
-		'public/css/theme.css'
-	)
-	.autoload({
-		jquery: ['$', 'window.jQuery', 'jQuery', 'window.$', 'jquery', 'window.jquery'],
-	});
+mix.react('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css');

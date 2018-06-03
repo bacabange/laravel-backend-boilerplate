@@ -23,7 +23,20 @@
 </head>
 <body>
     <div id="app">
-        @yield('content')
+        @if ($appType == 'auth')
+            @yield('content')
+        @else
+            <div class="page">
+                @include('layouts.partials.app-header')
+                <div class="page-content d-flex align-items-stretch">
+                    @include('layouts.partials.app-sidebar')
+                    <div class="content-inner">
+                        @yield('content')
+                        @include('layouts.partials.app-footer')
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
 
     <!-- Scripts -->

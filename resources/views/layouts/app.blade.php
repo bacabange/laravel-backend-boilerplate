@@ -32,9 +32,9 @@
                     @include('layouts.partials.app-sidebar')
                     <div class="content-inner">
                         @yield('content')
+                        @include('layouts.partials.app-footer')
                     </div>
                 </div>
-                @include('layouts.partials.app-footer')
             </div>
         @endif
     </div>

@@ -4,9 +4,15 @@
     "Login": "Login",
     "Register": "Registrarse",
     "Name": "Nombre",
+    "Reset Password": "Restablecer contraseña",
     "Forgot Your Password?": "¿Olvidó su contraseña?",
     "Comfirm Password": "Confirmar Contraseña",
     "Do not have an account?": "¿No tiene una cuenta?",
     "Welcome": "Bienvenido",
-    "Do you have an account?": "¿Tienes una cuenta?"
+    "Do you have an account?": "¿Tienes una cuenta?",
+    "Send Password Reset Link": "Enviar enlace para restablecer contraseña",
+    "Users": "Usuarios",
+    "Roles": "Roles",
+    "Permissions": "Permisos",
+    "Configuration": "Configuración"
 }

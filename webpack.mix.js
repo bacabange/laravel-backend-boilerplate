@@ -12,4 +12,13 @@ let mix = require('laravel-mix');
  */
 
 mix.react('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+	.sass('resources/assets/sass/app.scss', 'public/css')
+	.styles(
+		[
+			'resources/assets/css/fontastic.css',
+			'resources/assets/css/style.default.css',
+			'resources/assets/css/style.blue.css',
+			'resources/assets/css/custom.css',
+		],
+		'public/css/theme.css'
+	);

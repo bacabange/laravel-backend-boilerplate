@@ -6986,3 +6986,6 @@ a > code {
   opacity: 0;
 }
 
+.breadcrumb {
+    margin-bottom: 16px;
+}

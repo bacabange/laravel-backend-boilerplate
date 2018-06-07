@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => 'auth', 'namespace' => 'Admin'], function () {
+    Route::get('/', 'DashboardController@index');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+    Route::resource('users', 'UsersController');
 });

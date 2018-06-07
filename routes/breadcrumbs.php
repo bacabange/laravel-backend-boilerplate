@@ -7,5 +7,5 @@ Breadcrumbs::for('dashboard', function ($trail) {
 
 Breadcrumbs::for('users', function ($trail) {
     $trail->parent('dashboard');
-    $trail->push('Users', route('users'));
+    $trail->push('Users', route('users.index'));
 });

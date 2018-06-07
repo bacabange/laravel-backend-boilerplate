@@ -4,9 +4,18 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Repositories\Repository;
+use App\Models\User;
 
 class UsersController extends Controller
 {
+    protected $user;
+
+    public function __construct(User $user)
+    {
+        $this->user = new Repository($user);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +23,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('admin.users.index');
+        $users = $this->user->getModel()->paginate();
+        return view('admin.users.index', compact('users'));
     }
 
     /**

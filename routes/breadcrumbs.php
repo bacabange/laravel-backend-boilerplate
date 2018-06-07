@@ -2,10 +2,10 @@
 
 // dashboard
 Breadcrumbs::for('dashboard', function ($trail) {
-    $trail->push('Dashboard', route('dashboard'));
+    $trail->push(__('Dashboard'), route('dashboard'));
 });
 
 Breadcrumbs::for('users', function ($trail) {
     $trail->parent('dashboard');
-    $trail->push('Users', route('users.index'));
+    $trail->push(__('Users'), route('users.index'));
 });

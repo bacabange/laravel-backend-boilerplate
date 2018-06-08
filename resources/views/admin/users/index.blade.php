@@ -19,8 +19,8 @@
                     <div class="dropdown">
                         <button type="button" id="closeCard4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
                         <div aria-labelledby="closeCard4" class="dropdown-menu dropdown-menu-right has-shadow">
-                            <a href="#" class="dropdown-item remove"> <i class="fa fa-plus"></i>Create</a>
-                            <a href="#" class="dropdown-item remove"> <i class="fa fa-download"></i>Download CSV</a>
+                            <a href="#" class="dropdown-item remove"> <i class="fa fa-plus"></i>{{ __('Create') }}</a>
+                            <a href="#" class="dropdown-item remove"> <i class="fa fa-download"></i>{{ __('Download') }} CSV</a>
                         </div>
                     </div>
                 </div>
@@ -33,10 +33,10 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Role</th>
-                                    <th>Actions</th>
+                                    <th>{{ __('Name') }}</th>
+                                    <th>{{ __('Email') }}</th>
+                                    <th>{{ __('Role') }}</th>
+                                    <th>{{ __('Actions') }}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -55,6 +55,8 @@
                             </tbody>
                         </table>
                     </div>
+
+                    {{ $users->links() }}
                 </div>
             </div>
 

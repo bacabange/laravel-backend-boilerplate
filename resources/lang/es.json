@@ -16,5 +16,10 @@
     "Roles": "Roles",
     "Permissions": "Permisos",
     "Configuration": "Configuración",
-    "List": "Lista"
+    "List": "Lista",
+    "Create": "Crear",
+    "Download": "Descargar",
+    "Email": "Correo",
+    "Role": "Rol",
+    "Actions": "Acciones"
 }

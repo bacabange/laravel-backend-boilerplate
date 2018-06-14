@@ -48,7 +48,7 @@ class UsersController extends Controller
     {
         $user = $this->user->create($request->only(['email', 'name', 'password']));
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('users.index');
     }
 
     /**

@@ -13,19 +13,19 @@
     <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
     <ul class="list-unstyled">
 
-        <li class="{{ request()->is('dashboard') ? 'active' : '' }}">
+        <li class="{{ request()->is('admin/dashboard') ? 'active' : '' }}">
             <a href="{{ route('dashboard') }}">
                 <i class="fa fa-tachometer"></i>{{ __('Dashboard') }}
             </a>
         </li>
 
-        <li class="{{ request()->is('users') ? 'active' : '' }}">
-            <a href="#usersDropdown" aria-expanded="{{ request()->is('users') ? 'true' : 'false' }}" data-toggle="collapse">
+        <li class="{{ request()->is('admin/users') || request()->is('admin/users/create') ? 'active' : '' }}">
+            <a href="#usersDropdown" aria-expanded="{{ request()->is('admin/users') || request()->is('admin/users/create') ? 'true' : 'false' }}" data-toggle="collapse">
                 <i class="fa fa-users"></i>{{ __('Users') }}
             </a>
 
-            <ul id="usersDropdown" class="collapse list-unstyled {{ request()->is('users') ? 'show' : '' }}">
-                <li class="{{ request()->is('users') ? 'active' : '' }}"><a href="{{ route('users.index') }}">{{ __('Users') }}</a></li>
+            <ul id="usersDropdown" class="collapse list-unstyled {{ request()->is('admin/users') || request()->is('admin/users/create') ? 'show' : '' }}">
+                <li class="{{ request()->is('admin/users') || request()->is('admin/users/create') ? 'active' : '' }}"><a href="{{ route('users.index') }}">{{ __('Users') }}</a></li>
                 <li><a href="#">{{ __('Roles') }}</a></li>
                 <li><a href="#">{{ __('Permissions') }}</a></li>
             </ul>

@@ -19,7 +19,7 @@
                     <div class="dropdown">
                         <button type="button" id="closeCard4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
                         <div aria-labelledby="closeCard4" class="dropdown-menu dropdown-menu-right has-shadow">
-                            <a href="#" class="dropdown-item remove"> <i class="fa fa-plus"></i>{{ __('Create') }}</a>
+                            <a href="{{ route('users.create') }}" class="dropdown-item"> <i class="fa fa-plus"></i>{{ __('Create') }}</a>
                             <a href="#" class="dropdown-item remove"> <i class="fa fa-download"></i>{{ __('Download') }} CSV</a>
                         </div>
                     </div>

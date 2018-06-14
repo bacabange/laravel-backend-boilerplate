@@ -1,6 +1,6 @@
 {
     "E-Mail Address": "Correo Electrónico",
-    "Password": "Password",
+    "Password": "Contraseña",
     "Login": "Login",
     "Logout": "Salir",
     "Register": "Registrarse",
@@ -21,5 +21,9 @@
     "Download": "Descargar",
     "Email": "Correo",
     "Role": "Rol",
-    "Actions": "Acciones"
+    "Actions": "Acciones",
+    "Confirm Password": "Confirmar Contraseña",
+    "Save": "Guardar",
+    "Update": "Actualizar",
+    "Edit": "Editar"
 }
